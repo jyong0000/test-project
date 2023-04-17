@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./naver.css" />
+    <!-- 부트스트랩 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"
+  ></script>
+ 
+  </head>
+
+  <body>
+    <div class="wrap container">
+      <header></header>
+      <main>
+        <label for="inputId" class="form-label">아이디</label>
+        <input type="text" id="inputId" class="form-control" maxlength="20"/>
+
+        <label for="inputPassword5" class="form-label">비밀번호</label>
+        <input
+          type="password"
+          id="inputPassword1"
+          class="form-control"
+          aria-labelledby="passwordHelpBlock"
+          maxlength="30"
+        />
+        <div id="passwordHelpBlock" class="form-text"></div>
+
+        <label for="inputPassword5" class="form-label">비밀번호 재확인</label>
+        <input
+          type="password"
+          id="inputPassword2"
+          class="form-control"
+          aria-labelledby="passwordHelpBlock"
+          maxlength="30"
+        />
+
+        
+        <label for="inputPassword5" class="form-label name1"><h5>이름</h5></label>
+        <input
+          type="text"
+          id="inputName"
+          class="form-control"
+          aria-labelledby="passwordHelpBlock"
+        />
+
+        <div class="row g-2" style="margin-top: 10px;">
+          <h5>생년월일</h5>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="inputYear"
+              placeholder="년(4자)"
+            />
+            <label for="floatingInputGrid"></label>
+          </div>
+
+          <div class="col-md-4">
+            <select class="form-select" id="inputMonth">
+              <option selected disabled>월</option>
+              <option value="1">1월</option>
+              <option value="2">2월</option>
+              <option value="3">3월</option>
+              <option value="4">4월</option>
+              <option value="5">5월</option>
+              <option value="6">6월</option>
+              <option value="7">7월</option>
+              <option value="8">8월</option>
+              <option value="9">9월</option>
+              <option value="10">10월</option>
+              <option value="11">11월</option>
+              <option value="12">12월</option>
+            </select>
+          </div>
+
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="inputDay"
+              placeholder="일"
+            />
+            <label for="inputDay"></label>
+          </div>
+        </div>
+
+        <div>
+          <h5>성별</h5>
+          <select class="form-select" id="gender">
+            <option selected disabled>성별</option>
+            <option value="man">남자</option>
+            <option value="woman">여자</option>
+            <option value="nogender">선택안함</option>
+          </select>
+        </div>
+
+        <label for="inputPassword5" class="form-label"
+          ><h5>본인확인 이메일(선택)</h5></label
+        >
+        <input
+          type="email"
+          id="inputEmail3"
+          class="form-control"
+          aria-labelledby="passwordHelpBlock"
+          placeholder="선택입력"
+        />
+
+        <div class="row g-2"  style="margin-top: 10px;">
+          <h5>휴대전화</h5>
+          <div class="col-md-12">
+            <select class="form-select" id="inputPhone">
+              <option selected>대한민국 +82</option>
+              <option value="1">가나 +233</option>
+              <option value="2">가봉 +241</option>
+              <option value="3">가이아나 +592</option>
+              <option value="4">감비아 +220</option>
+            </select>
+          </div>
+
+          <div class="col-md-9">
+            <input
+              type="tel"
+              class="form-control"
+              id="inputTel"
+              placeholder="전화번호 입력"
+            />
+            <label for="inputNumber"></label>
+          </div>
+          <button
+            type="button"
+            class="btn btn-success col-md-3"
+            style="height: 38px; font-size: 13px; background-color: #03C75A; border: none;"
+          >
+            인증번호 받기
+          </button>
+
+          <div class="col-md-12" style="margin-top: -20px;">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInputGrid"
+              placeholder="인증번호를 입력하세요."
+            />
+            <label for="floatingInputGrid"></label>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-success col-md-12 register" style="background-color: #03C75A; border: none; height: 50px;">가입하기</button>
+        </div>
+      </main>
+      <footer>
+        <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><strong><a href="#">개인정보처리방침</a></strong></li>
+            <li><a href="#">책임의 한계와 법적고지</a></li>
+            <li><a href="#">회원정보 고객센터</a></li>
+        </ul>
+        
+      </footer>
+    </div>
+           <!-- 제이쿼리 -->
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+           <script src="./naver.js"></script>
+  </body>
+</html>

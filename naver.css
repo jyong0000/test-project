@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.wrap {
+  min-width: 1000px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-image: url(./image/m_naver_logo_20191126.png);
+  background-repeat: no-repeat;
+  background-size: 240px auto;
+  background-position: 0 0;
+  height: 44px;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+main {
+  margin-top: 30px;
+  margin: 0 auto;
+  width: 460px;
+}
+
+.form-label {
+  margin-top: 20px;
+}
+
+.name1 {
+  margin-top: 30px;
+}
+
+footer {
+  margin: 0 auto;
+  margin-top: 50px;
+  min-width: 700px;
+  padding-bottom: 20px;
+  padding-left: 200px;
+}
+
+footer > ul {
+  display: flex;
+  width: 700px;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+}
+
+footer > ul > li {
+  border-right: 1px solid lightgrey;
+  padding: 0 3px 0 7px;
+}
+
+footer > ul > li > a {
+  color: black;
+}
+
+footer > ul > li > strong > a {
+  color: black;
+}
